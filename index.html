@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income Expense Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+ <!-- font -->
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Income & Expense Calculator</h1>
+
+    <!-- Summary of totals -->
+    <div class="summary">
+      <p class="pas">Total Income <span id="total-income">0</span></p>
+      <p class="nagative">Total Expenses <span id="total-expenses">0</span></p>
+      <p class="pas">Net Balance <span id="net-balance">0</span></p>
+    </div>
+
+    <!-- Form for adding entries -->
+    <form id="entry-form">
+      <input type="text" id="description" placeholder="Description" required>
+      <input type="number" id="amount" placeholder="Amount" required>
+     
+      <div class="type-selection">
+
+        
+        
+        <label>
+            <input type="radio" name="type" value="income"  checked> Income</label>
+        <label>
+            <input type="radio" name="type" value="expense"> Expense</label>
+      </div>
+      <button class="syt" type="submit">Add transaction</button>
+    </form>
+
+<div class="fbox">
+
+
+    <div class="ft">
+      <h6>filters transaction</h6>
+    </div>
+    <!-- Filters -->
+    <div class="filters">
+      <label class="active"><input type="radio" name="filter" value="all" checked> All</label>
+      <label class="active"><input type="radio" name="filter" value="income"> Income</label>
+      <label class="active"><input type="radio" name="filter" value="expense"> Expense</label>
+    </div>
+
+    <!-- List of entries -->
+    <ul id="entries-list">
+        
+    </ul>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

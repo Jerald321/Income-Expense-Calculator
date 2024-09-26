@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    background: white;
+    padding: 20px;
+    margin-top: 100px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  
+  .summary {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input, form button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .type-selection {
+   display: flex;
+   justify-content: space-around;
+  
+   margin-top: 10px;
+    
+
+  }
+  
+  
+  .type-selection label{
+    border: 2px solid  yellowgreen;
+    padding: 10px;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    
+  }
+  .syt{
+   background-color: aqua;
+    margin-top: 20px;
+    border-radius: 10px; 
+    cursor: pointer;
+
+  }
+  .syt:hover{
+    border-radius: 30px;
+  }
+   
+  .filters {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .filters label{
+    border: 2px solid  yellowgreen;
+    padding: 10px;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    
+  }
+  
+  .filters:is(:hover).active{
+   background-color: red;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+    
+    
+  }
+  ul li span{
+    text-align: justify;
+    overflow-x: scroll;
+    
+    
+  }
+  ul h1{
+    font-size: 23px;
+
+  }
+  ul li button {
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+ ul li button:hover{
+  border: 2px solid black;
+ }
+  .nagative{
+    background:red !important;
+    border:2px solid  red !important;
+    color: black ;
+    box-shadow: 5px 5px 10px black;
+  }
+.summary{
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+  .summary p{
+    border: 2px solid green;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background:green;
+    border-radius: 10px;
+    
+   
+
+  }
+.pas{
+    color: #f4f4f4;
+    box-shadow: 5px 5px 13px darkgray;
+}
+  .summary span{
+    padding-top: 10px;
+  }
+
+.summary p:hover{
+    border-radius: 15px;
+}
+
+.type{
+    border: 2px solid red;
+   
+}
+.fbox{
+  border: 2px solid #f4f4f4;
+  box-shadow: 8px 8px 8px darkgray ;
+  
+}
+.ft h6{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+ 
+.ft{
+  
+}
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
