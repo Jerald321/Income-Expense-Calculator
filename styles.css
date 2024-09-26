@@ -189,5 +189,14 @@
     .container {
       padding: 10px;
     }
+    .summary{
+      display:flex;
+      justify-content: space-between;
+      
+  }
+  .summary span{
+    padding-top: 6px;
+  }
+
   }
   
